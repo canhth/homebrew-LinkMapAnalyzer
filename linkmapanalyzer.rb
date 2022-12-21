@@ -5,7 +5,7 @@ class Linkmapanalyzer < Formula
   desc "Parse the linkmap file in the iOS project to facilitate the analysis of the package size occupied by each module"
   homepage "https://github.com/canhth/iOS-LinkMapAnalyzer"
   url "https://github.com/canhth/iOS-LinkMapAnalyzer/archive/refs/tags/1.0.0.tar.gz"
-  sha256 "f357d97989328ff6bd1fb4c4609b7c397728a2ba7079bc74f475521e4cc6bd8b"
+  sha256 "c66979c3a96c0349617dfc3d880e74ae5d3a9946e312891b8aeec85f9d48b26e"
   license "MIT"
 
   # depends_on "cmake" => :build
