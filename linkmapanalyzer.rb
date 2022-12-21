@@ -4,9 +4,9 @@
 class Linkmapanalyzer < Formula
   desc "Parse the linkmap file in the iOS project to facilitate the analysis of the package size occupied by each module"
   homepage "https://github.com/canhth/iOS-LinkMapAnalyzer"
-  url "https://github.com/canhth/iOS-LinkMapAnalyzer/releases/download/1.0.0/LinkMapAnalyzer"
+  url "https://github.com/canhth/iOS-LinkMapAnalyzer/archive/refs/tags/1.0.0.tar.gz"
   sha256 "f357d97989328ff6bd1fb4c4609b7c397728a2ba7079bc74f475521e4cc6bd8b"
-  license "public_domain"
+  license "MIT"
 
   # depends_on "cmake" => :build
 
@@ -14,7 +14,7 @@ class Linkmapanalyzer < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    system "./configure", *std_configure_args, "--disable-silent-rules"
+    bin.install 'LinkMapAnalyzer'
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
   end
 
